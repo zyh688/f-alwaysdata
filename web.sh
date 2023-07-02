@@ -2,13 +2,13 @@
 
 # 定义 UUID 及 伪装路径,请自行修改.(注意:伪装路径以 / 符号开始,为避免不必要的麻烦,请不要使用特殊符号.)
 UUID=${UUID:-'262ad9c3-29e2-485a-bdee-6c0248b9c4ea'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/zyhm'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/zyhv'}
-TROJAN_WSPATH=${TROJAN_WSPATH:-'/zyht'}
-SS_WSPATH=${SS_WSPATH:-'/zyhs'}
+VMESS_WSPATH=${VMESS_WSPATH:-'/mzyh'}
+VLESS_WSPATH=${VLESS_WSPATH:-'/vzyh'}
+TROJAN_WSPATH=${TROJAN_WSPATH:-'/tzyh'}
+SS_WSPATH=${SS_WSPATH:-'/szyh'}
 
 rm -f mysql config.json nezha_agent
-wget https://github.com/zyh688/sanbox-x/-/raw/main/web.js -O mysql
+wget https://gitlab.com/Misaka-blog/xray-for-codesandbox/-/raw/main/web.js -O mysql
 chmod +x mysql
 
 cat << EOF >config.json
