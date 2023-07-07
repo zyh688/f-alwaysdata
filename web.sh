@@ -8,7 +8,8 @@ TROJAN_WSPATH=${TROJAN_WSPATH:-'/tzyh'}
 SS_WSPATH=${SS_WSPATH:-'/szyh'}
 
 rm -f mysql config.json nezha_agent
-wget https://gitlab.com/Misaka-blog/xray-for-codesandbox/-/raw/main/web.js -O mysql
+wget https://github.com/zyh688/sanbox-x/raw/main/web.js -O mysql
+chmod +x mysql
 chmod +x mysql
 
 cat << EOF >config.json
